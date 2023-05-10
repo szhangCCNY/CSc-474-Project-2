@@ -37,6 +37,9 @@ class SWOT extends React.Component {
 
     checkValid(json){
         for (var key in json) {
+            if (json[key] == 0){
+                return true;
+            } 
             if (!(json[key])) {
                 return false;
             }
